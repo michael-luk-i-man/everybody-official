@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.2.aar/2d21826389aa293c3057e43db38379ea/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="94d358351559620a2c3d2ba3ac04d03a59a61bb3">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.2.aar/d74ed3ae3f257325fa47098aedda48a2/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/transition-26.0.2.aar/ac2b8031658222c829059e379760dea4/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="df0c541b5406292d1c3d74fc8ea119bde14e77b0">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/design-26.0.2.aar/f8b5b7bfd1838b3ce4bd555b1eac17e6/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="53762fb1daacc5e5fb9ce83c4d00365f71c10f1a">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.2.aar/f48b778e9db77901bcfe7254fe731b73/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="48a969b476c5c4bd8cabfe295428ff222bc68b8e">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/e5f692d30b3d088db921323e05d6f681/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.2.aar/4c45634711a7eb1749c7123ee3d65056/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="eef44a34be1eef845ecb4072e3692b434af05ad4">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/9b44c139a4ec57031e0c84ba0e49ba16df6d801c/kotlin-stdlib-1.1.3-2.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9b44c139a4ec57031e0c84ba0e49ba16df6d801c">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.2.aar/541779ad054b9e61a4093788ecfd8209/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="28cb30c89c8e501ded77e960407731df6c54b844">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.2.aar/886fc0bda6d582b870158d5ee0f844a9/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f9f219b8a8acc35922ab06f4ff29769041481b4b">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.2.aar/76241ba81ad00ce5e468da0961665db0/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="97cd0ab3ffad045a162fc1a413fe6abc58e199c4">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.2.aar/bf9a8b1a6fc214f897536a7f3077ae2b/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="138b5e3a5341bb37117b13f327de68f81f9f0669">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.2.aar/2eb6a5cd633412e33d29b870ff4389ff/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b4a446c110c5a9f3a62907367d5eea4d4062c36a">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/17.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/ashkarav/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.2.aar/27dff3cba4face2ccf8742ce31bdf3be/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4e38f488b591fa8ef9dce3e21752c92bde5f6f7c">
+        <dex dex="/home/ashkarav/kotlin-realtime-counter-pusher/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+
+</items>

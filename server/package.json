@@ -1,0 +1,29 @@
+{
+  "name": "realtimecounterserver",
+  "version": "1.0.0",
+  "description": "Code for Pusher Realtime Counter Tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/perfectmak/kotlin-realtime-counter-server-pusher.git"
+  },
+  "keywords": [
+    "pusher",
+    "kotlin",
+    "node"
+  ],
+  "author": "Perfect Makanju <damiperfect@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/perfectmak/kotlin-realtime-counter-server-pusher/issues"
+  },
+  "homepage": "https://github.com/perfectmak/kotlin-realtime-counter-server-pusher#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "kotlin": "^1.1.4",
+    "pusher": "^1.5.1"
+  }
+}
