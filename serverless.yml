@@ -1,0 +1,26 @@
+.service: tvass
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  environment:
+    PUSHER_APP_ID: "497481"
+    PUSHER_APP_KEY: "e686a9066178e8304923"
+    PUSHER_APP_SECRET: "bb5453e06c069a608b44"
+    PUSHER_APP_CLUSTER: "us2"
+
+functions:
+  home:
+    handler: handler.home
+    events:
+    - http:
+        path: /
+        method: get
+        cors: true
+  webhook:
+    handler: handler.webhook
+    events:
+    - http:
+        path: /webhook
+        method: post
+        cors: true 

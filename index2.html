@@ -1,0 +1,394 @@
+<meta name="viewport" content="width=620" />
+<!DOCTYPE html>
+<head>
+  <title>Pusher Test</title>
+  <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+</head>
+<style type="text/css">
+  p {
+    font-family: Roboto, sans-serif
+  }
+</style>
+<body>
+
+    <article>
+      <p>EVERYBODY: <span id="status">Loading...</span><span id='points'>0</span> <!-- <input type="text" name="locationpair" id="client-location" value="-33.890542, 151.274856"> </p> --><!-- <span id='points'>NULL</span> -->
+    </article>
+
+
+
+<script>
+function success(position) {
+  var s = document.querySelector('#status');
+
+  if (s.className == 'success') {
+    // not sure why we're hitting this twice in FF, I think it's to do with a cached result coming back
+    return;
+  }
+
+  s.innerHTML = "CARES";
+  s.className = 'success';
+
+  var mapcanvas = document.createElement('div');
+  mapcanvas.id = 'mapcanvas';
+  mapcanvas.style.height = '100vh';
+  mapcanvas.style.width = '100vw';
+
+  document.querySelector('article').appendChild(mapcanvas);
+
+  rando = (Math.random() * 0.05) + 1)
+
+  var latlng = new google.maps.LatLng(position.coords.latitude - rando, position.coords.longitude - rando);
+
+  // var latlng_str = document.getElementById('client-location').value;
+
+
+  // latlng_array = latlng_str.split(",");
+  // latlng = new google.maps.LatLng(latlng_array[0],latlng_array[1]);
+
+  var locations = [
+      [40.812483, -73.962976, 'Harlem'],
+      [36.130124, -96.004526, 'Tulsa Bridge'],
+      [34.676487, 36.519799, 'Kurbat Ghazi'],
+      [31.409429, 121.493465, 'Baoshan'],
+      [36.865842, -119.786047, 'Fresno'],
+[33, 66],
+[41, 20],
+[28, 3],
+[-14.3333333, -170],
+[42.5, 1.5],
+[-12.5, 18.5],
+[18.216667, -63.05],
+[17.05, -61.8],
+[-34, -64],
+[40, 45],
+[12.5, -69.966667],
+[-15.95, -5.7],
+[-12.416667, 123.333333],
+[-25, 135],
+[47.333333, 13.333333],
+[40.5, 47.5],
+[24, -76],
+[26, 50.5],
+[24, 90],
+[13.166667, -59.533333],
+[-21.416667, 39.7],
+[53, 28],
+[50.833333, 4],
+[17.25, -88.75],
+[9.5, 2.25],
+[32.333333, -64.75],
+[27.5, 90.5],
+[-17, -65],
+[12.2, -68.25],
+[44.25, 17.833333],
+[-22, 24],
+[-54.433333, 3.4],
+[-10, -55],
+[-6, 72],
+[18.5, -64.5],
+[4.5, 114.666667],
+[43, 25],
+[13, -2],
+[22, 98],
+[-3.5, 30],
+[13, 105],
+[6, 12],
+[60, -96],
+[16, -24],
+[19.5, -80.666667],
+[7, 21],
+[15, 19],
+[-30, -71],
+[35, 105],
+[-10.5, 105.666667],
+[10.283333, -109.216667],
+[-12, 96.833333],
+[4, -72],
+[-12.166667, 44.25],
+[-16.083333, -161.583333],
+[-17.5, 151],
+[10, -84],
+[8, -5],
+[45.166667, 15.5],
+[22, -79.5],
+[12.166667, -69],
+[35, 33],
+[49.75, 15],
+[0, 25],
+[56, 10],
+[11.5, 42.5],
+[15.5, -61.333333],
+[19, -70.666667],
+[-2, -77.5],
+[27, 30],
+[13.833333, -88.916667],
+[2, 10],
+[15, 39],
+[59, 26],
+[8, 38],
+[-22.333333, 40.366667],
+[-51.75, -59.166667],
+[62, -7],
+[5, 152],
+[-18, 178],
+[64, 26],
+[46, 2],
+[4, -53],
+[-15, -140],
+[-43, 67],
+[-1, 11.75],
+[13.5, -15.5],
+[31.425074, 34.373398],
+[41.999981, 43.499905],
+[51.5, 10.5],
+[8, -2],
+[36.133333, -5.35],
+[-11.5, 47.333333],
+[39, 22],
+[72, -40],
+[12.116667, -61.666667],
+[16.25, -61.583333],
+[13.4444444, 144.7366667],
+[15.5, -90.25],
+[49.583333, -2.333333],
+[11, -10],
+[12, -15],
+[5, -59],
+[19, -72.416667],
+[-53, 73],
+[15, -86.5],
+[22.25, 114.166667],
+[47, 20],
+[65, -18],
+[20, 77],
+[-5, 120],
+[32, 53],
+[33, 44],
+[53, -8],
+[54.25, -4.5],
+[31.5, 34.75],
+[42.833333, 12.833333],
+[18.25, -77.5],
+[36, 138],
+[49.216667, -2.116667],
+[31, 36],
+[-17.05833, 42.71667],
+[48, 68],
+[1, 38],
+[-5, -170],
+[42.583333, 21],
+[29.5, 47.75],
+[41, 75],
+[18, 105],
+[57, 25],
+[33.833333, 35.833333],
+[-29.5, 28.25],
+[6.5, -9.5],
+[25, 17],
+[47.166667, 9.533333],
+[56, 24],
+[49.75, 6.166667],
+[22.157778, 113.559722],
+[41.833333, 22],
+[-20, 47],
+[-13.5, 34],
+[2.5, 112.5],
+[3.2, 73],
+[17, -4],
+[35.916667, 14.433333],
+[10, 167],
+[14.666667, -61],
+[20, -12],
+[-20.3, 57.583333],
+[-12.833333, 45.166667],
+[23, -102],
+[47, 29],
+[43.733333, 7.4],
+[46, 105],
+[42.5, 19.3],
+[16.75, -62.2],
+[32, -5],
+[-18.25, 35],
+[-22, 17],
+[-0.533333, 166.916667],
+[28, 84],
+[52.5, 5.75],
+[-21.5, 165.5],
+[-42, 174],
+[13, -85],
+[16, 8],
+[10, 8],
+[-19.033333, -169.866667],
+[-29.033333, 167.95],
+[40, 127],
+[16, 146],
+[62, 10],
+[21, 57],
+[30, 70],
+[6, 134],
+[9, -80],
+[-6, 147],
+[-22.993333, -57.996389],
+[-10, -76],
+[13, 122],
+[-25.066667, -130.1],
+[52, 20],
+[39.5, -8],
+[18.2482882, -66.4998941],
+[25.5, 51.25],
+[-1, 15],
+[-21.1, 55.6],
+[46, 25],
+[60, 100],
+[-2, 30],
+[17.9, -62.833333],
+[17.333333, -62.75],
+[13.883333, -60.966667],
+[18.075, -63.05833],
+[46.833333, -56.333333],
+[13.083333, -61.2],
+[-13.803096, -172.178309],
+[43.933333, 12.416667],
+[1, 7],
+[25, 45],
+[14, -14],
+[44, 21],
+[-4.583333, 55.666667],
+[8.5, -11.5],
+[1.366667, 103.8],
+[18.04167, -63.06667],
+[48.666667, 19.5],
+[46.25, 15.166667],
+[-8, 159],
+[6, 48],
+[-30, 26],
+[-56, -33],
+[37, 127.5],
+[8, 30],
+[40, -4],
+[7, 81],
+[16, 30],
+[4, -56],
+[78, 20],
+[-26.5, 31.5],
+[62, 15],
+[47, 8],
+[35, 38],
+[24, 121],
+[39, 71],
+[-6, 35],
+[15, 100],
+[-8.833333, 125.75],
+[8, 1.166667],
+[-9, -171.75],
+[-20, -175],
+[11, -61],
+[-15.866667, 54.416667],
+[34, 9],
+[39.059012, 34.911546],
+[40, 60],
+[21.733333, -71.583333],
+[-8, 178],
+[2, 33],
+[49, 32],
+[24, 54],
+[54, -4],
+[39.828175, -98.5795],
+[-33, -56],
+[5.8811111, -162.0725],
+[18.3482891, -64.9834807],
+[41.707542, 63.84911],
+[-16, 167],
+[41.9, 12.45],
+[8, -66],
+[16.166667, 107.833333],
+[-13.3, -176.2],
+[31.666667, 35.25],
+[25, -13.5],
+[15.5, 47.5],
+[-15, 30],
+[-19, 29]
+
+    ];
+
+  var myOptions = {
+    zoom: 7,
+    center: latlng,
+    mapTypeControl: false,
+    navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map(document.getElementById("mapcanvas"), myOptions);
+
+  var marker = new google.maps.Marker({
+      position: latlng,
+      map: map,
+      title:"You are here! (at least within a "+position.coords.accuracy+" meter radius)"
+  });
+  // global lat = marker.position[0];
+  // global lon = marker.position[1];
+
+  for (i = 0; i < locations.length; i++) {  
+      coords = locations[i];
+      marker2 = new google.maps.Marker({
+        position: new google.maps.LatLng(coords[0], coords[1]),
+        map: map,
+        title: 'Thanks'
+      });
+    }
+
+  // Enable pusher logging - don't include this in production
+
+  // var pusher = new Pusher('e686a9066178e8304923', {
+  //   cluster: 'us2',
+  //   encrypted: true
+  // });
+
+
+
+  // var channel = pusher.subscribe('updatesChannel');
+  // pusher.bind('new-marker', function(data) {
+  //     alert('Someone has joined.');
+  //     locs = data.split(";");
+  //     for (i = 0; i < locs.length; i++) {  
+  //     coords = locs.split(',');
+  //     marker = new google.maps.Marker({
+  //       position: new google.maps.LatLng(coords[0, coords[1),
+  //       map: map
+  //     });
+  //   });
+
+
+}
+
+function error(msg) {
+  var s = document.querySelector('#status');
+  s.innerHTML = typeof msg == 'string' ? msg : "failed";
+  s.className = 'fail';
+
+  // console.log(arguments);
+}
+
+
+
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(success, error);
+} else {
+  error('not supported');
+}
+
+var points = 0; 
+google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addListener(marker, 'click', function() { 
+  alert('clicked');
+  points = points - 1;
+  document.getElementById('points').innerHTML = points;
+});
+
+</script>
+</body>
+
+</html>
